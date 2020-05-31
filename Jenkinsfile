@@ -3,7 +3,7 @@ pipeline {
 	// configure environmental variables
 	environment {
 	    registry = "https://registry.hub.docker.com"
-	    registryCredentials = "docker"
+	    registryCredentials = "docker-hub"
 	}
 	
 	// instruct jenkins to allocate executor and workspace for entire pipeline
