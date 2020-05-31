@@ -13,7 +13,7 @@ pipeline {
     	// compile and generate single executable jar with all dependencies
 		stage('Build') {
             steps {
-                sh 'mvn install'
+                sh 'mvn clean install package'
             }
         }
         // build docker image of an application
